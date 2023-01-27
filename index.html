@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1 class="title">Flexbox</h1>
+    <div class="menu_link">
+        <div class="item_link">
+            <a href="#flex-direction" class="link_title">flex-direction</a>
+            <ul class="list">
+                <li>row</li>
+                <li>row-reverse</li>
+                <li>column</li>
+                <li>column-reverse</li>
+            </ul>
+        </div>
+        <div class="item_link">
+            <a href="#justify-content" class="link_title">justify-content</a>
+            <ul class="list">
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between</li>
+                <li>space-around</li>
+            </ul>
+        </div>
+        <div class="item_link">
+            <a href="#flex-wrap" class="link_title">flex-wrap</a>
+            <ul class="list">
+                <li>nowrap</li>
+                <li>wrap</li>
+                <li>wrap-reverse</li>
+            </ul>
+        </div>
+        <div class="item_link">
+            <a href="#align-items" class="link_title">align-items</a>
+            <ul class="list">
+                <li>stretch</li>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>baseline</li>
+            </ul>
+        </div>
+        <div class="item_link">
+            <a href="#align-content" class="link_title">align-content</a>
+            <ul class="list">
+                <li>stretch</li>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between</li>
+                <li>space-around</li>
+            </ul>
+        </div>
+        <div class="item_link">
+            <a href="#align-self" class="link_title">align-self</a>
+            <ul class="list">
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>baseline</li>
+                <li>stretch</li>
+            </ul>
+        </div>
+    </div>
+    <div class="subtitle">
+        <h2 id="flex-direction">
+            <span class="material-symbols-outlined">double_arrow</span>
+            flex-direction
+        </h2>
+    </div>
+    <div class="container _first">
+        <div class="box">
+            <div class="text">row</div>
+            <div class="box__item row">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text">row-reverse</div>
+            <div class="box__item rreverse">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text">column</div>
+            <div class="box__item column">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text">column-reverse</div>
+            <div class="box__item creverse">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+    </div>
+    <div class="subtitle">
+        <h2 id="justify-content">
+            <span class="material-symbols-outlined">double_arrow</span>
+            justify-content
+        </h2>
+        <p>По умолчанию все элементы расположены в начале главной оси (flex-start)</p>
+    </div>
+    <div class="container _first">
+        <div class="box">
+            <div class="text">flex-end</div>
+            <div class="box__item content-end">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text">center</div>
+            <div class="box__item content-center">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text">space-between</div>
+            <div class="box__item content-between">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text">space-around</div>
+            <div class="box__item content-around">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+    </div>
+    <div class="subtitle">
+        <h2 id="flex-wrap">
+            <span class="material-symbols-outlined">double_arrow</span>
+            flex-wrap
+        </h2>
+    </div>
+    <div class="container _first wr">
+        <div class="box _wrap">
+            <div class="text">nowrap</div>
+            <div class="box__item f-nowrap">
+                <div class="item _wr">1</div>
+                <div class="item _wr">2</div>
+                <div class="item _wr">3</div>
+                <div class="item _wr">4</div>
+            </div>
+        </div>
+        <div class="box _wrap">
+            <div class="text">wrap</div>
+            <div class="box__item f-wrap">
+                <div class="item _wr">1</div>
+                <div class="item _wr">2</div>
+                <div class="item _wr">3</div>
+                <div class="item _wr">4</div>
+            </div>
+        </div>
+        <div class="box _wrap">
+            <div class="text">wrap-reverse</div>
+            <div class="box__item f-wraprev">
+                <div class="item _wr">1</div>
+                <div class="item _wr">2</div>
+                <div class="item _wr">3</div>
+                <div class="item _wr">4</div>
+            </div>
+        </div>
+    </div>
+    <div class="subtitle">
+        <h2 id="align-items">
+            <span class="material-symbols-outlined">double_arrow</span>
+            align-items
+        </h2>
+    </div>
+    <div class="container _first">
+        <div class="box _align">
+            <div class="text">flex-start</div>
+            <div class="box__item astart">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">flex-end</div>
+            <div class="box__item alend">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">center</div>
+            <div class="box__item acenter">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">baseline</div>
+            <div class="box__item abase">
+                <div class="item _a">1</div>
+                <div class="item _b">2</div>
+                <div class="item _c">3</div>
+                <div class="item _d">4</div>
+            </div>
+        </div>
+    </div>
+    <div class="subtitle">
+        <h2 id="align-content">
+            <span class="material-symbols-outlined">double_arrow</span>
+            align-content
+        </h2>
+    </div>
+    <div class="container _first">
+        <div class="box _align">
+            <div class="text">stretch</div>
+            <div class="box__item str f-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">flex-start</div>
+            <div class="box__item flst f-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">flex-end</div>
+            <div class="box__item flend f-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">center</div>
+            <div class="box__item flcen f-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">space-between</div>
+            <div class="box__item spbet f-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">space-around</div>
+            <div class="box__item spar f-wrap">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+        </div>
+    </div>
+    <div class="subtitle">
+        <h2 id="align-self">
+            <span class="material-symbols-outlined">double_arrow</span>
+            align-self
+        </h2>
+    </div>
+    <div class="container _first">
+        <div class="box _align">
+            <div class="text">flex-start</div>
+            <div class="box__item row">
+                <div class="item _f">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">flex-end</div>
+            <div class="box__item row">
+                <div class="item _k">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">center</div>
+            <div class="box__item row">
+                <div class="item _l">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+        <div class="box _align">
+            <div class="text">stretch</div>
+            <div class="box__item row">
+                <div class="item _n">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
